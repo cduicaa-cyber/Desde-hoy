@@ -163,12 +163,44 @@ stars.appendChild(s);
 
 function abrir(){
 
-alert("Bienvenida, Lau ❤️\\n\\nAquí comienza nuestra historia...");
+function abrir(){
+
+const libro = document.querySelector(".book");
+
+libro.style.transform="scale(1.25) rotateY(-18deg)";
+libro.style.boxShadow="0 50px 120px rgba(0,0,0,.65)";
+
+setTimeout(()=>{
+
+document.body.style.transition="2s";
+document.body.style.background="#02070d";
+
+libro.innerHTML=`
+
+<h1 style="font-size:42px;color:#5d3d14;">Proyecto Aurora</h1>
+
+<p style="margin-top:20px;font-size:22px;line-height:1.8;">
+
+Todas las historias comienzan una vez.
+
+<br><br>
+
+Las que valen la pena...
+
+<br><br>
+
+se siguen escribiendo todos los días.
+
+</p>
+
+<p class="small">
+
+Desliza para comenzar
+
+</p>
+
+`;
+
+},900);
 
 }
-
-</script>
-
-</body>
-
-</html>
